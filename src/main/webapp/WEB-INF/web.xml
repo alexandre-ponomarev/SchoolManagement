@@ -4,4 +4,14 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>GetLoginController</servlet-name>
+  	<display-name>GetLoginController</display-name>
+  	<description></description>
+  	<servlet-class>schoolmanagementtool.controller.GetLoginController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>GetLoginController</servlet-name>
+  	<url-pattern>/getLogin</url-pattern>
+  </servlet-mapping>
 </web-app>
