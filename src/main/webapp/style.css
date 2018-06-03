@@ -1,0 +1,25 @@
+@charset "ISO-8859-1";
+
+#studentDisplay, #bookDisplay{
+	    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#studentDisplay td, #studentDisplay th, #bookDisplay td, #bookDisplay th{
+	    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+
+#studentDisplay tr:nth-child(even), #bookDisplay tr:nth-child(even){background-color: #f2f2f2;}
+
+#studentDisplay tr:hover, #bookDisplay tr:hover {background-color: #ddd;}
+
+#studentDisplay th, #bookDisplay th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
