@@ -21,9 +21,12 @@
 <input type="text" name="category" /><br><br>
 <button type="submit" name="add"> Add Book</button>
 <button type="submit" name="edit">Edit Book</button>
-<button type="submit" name="delete">Delete Book</button>  
-
+<button type="submit" name="delete">Delete Book</button> 
 </form>
+<br>
+		<form action="getBook" method="get">
+		<button type="submit">Show All Books</button>
+	</form>
 </div>
 </body>
 </html>

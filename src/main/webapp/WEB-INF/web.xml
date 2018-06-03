@@ -34,6 +34,12 @@
   	<description></description>
   	<servlet-class>schoolmanagementtool.controller.UpdateBookController</servlet-class>
   </servlet>
+    <servlet>
+  	<servlet-name>GetBookController</servlet-name>
+  	<display-name>GetBookController</display-name>
+  	<description></description>
+  	<servlet-class>schoolmanagementtool.controller.GetBookController</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>GetLoginController</servlet-name>
   	<url-pattern>/getLogin</url-pattern>
@@ -53,5 +59,9 @@
   <servlet-mapping>
   	<servlet-name>UpdateBookController</servlet-name>
   	<url-pattern>/updateBook</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+  	<servlet-name>GetBookController</servlet-name>
+  	<url-pattern>/getBook</url-pattern>
   </servlet-mapping>
 </web-app>
