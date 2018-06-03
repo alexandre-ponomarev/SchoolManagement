@@ -10,8 +10,48 @@
   	<description></description>
   	<servlet-class>schoolmanagementtool.controller.GetLoginController</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>LoginController</servlet-name>
+  	<display-name>LoginController</display-name>
+  	<description></description>
+  	<servlet-class>schoolmanagementtool.controller.LoginController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>test</servlet-name>
+  	<display-name>test</display-name>
+  	<description></description>
+  	<servlet-class>SchoolManagmentTool.Controller.test</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>GetStudentController</servlet-name>
+  	<display-name>GetStudentController</display-name>
+  	<description></description>
+  	<servlet-class>schoolmanagementtool.controller.GetStudentController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UpdateBookController</servlet-name>
+  	<display-name>UpdateBookController</display-name>
+  	<description></description>
+  	<servlet-class>schoolmanagementtool.controller.UpdateBookController</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>GetLoginController</servlet-name>
   	<url-pattern>/getLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LoginController</servlet-name>
+  	<url-pattern>/LoginController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>test</servlet-name>
+  	<url-pattern>/test</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>GetStudentController</servlet-name>
+  	<url-pattern>/getStudent</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UpdateBookController</servlet-name>
+  	<url-pattern>/updateBook</url-pattern>
   </servlet-mapping>
 </web-app>
