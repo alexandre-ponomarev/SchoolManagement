@@ -1,5 +1,9 @@
 @charset "ISO-8859-1";
 
+.jumbotron, .btn-default {
+	 background-color: #98FB98;
+}
+
 #studentDisplay, #bookDisplay{
 	    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
@@ -23,3 +27,4 @@
     background-color: #4CAF50;
     color: white;
 }
+
