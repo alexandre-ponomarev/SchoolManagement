@@ -27,5 +27,6 @@
 	</tr>
 	<%	} %>
 </table>
+<a href="/SchoolManagementTool/teacherwelcome.jsp">Back</a>
 </body>
 </html>	

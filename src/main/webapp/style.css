@@ -1,30 +1,57 @@
 @charset "ISO-8859-1";
 
 .jumbotron, .btn-default {
-	 background-color: #98FB98;
+	background-color: #98FB98;
 }
 
-#studentDisplay, #bookDisplay{
-	    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
+#studentDisplay, #bookDisplay {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 75%;
 }
 
-#studentDisplay td, #studentDisplay th, #bookDisplay td, #bookDisplay th{
-	    border: 1px solid #ddd;
-    padding: 8px;
+#studentDisplay td, #studentDisplay th, #bookDisplay td, #bookDisplay th
+	{
+	border: 1px solid #ddd;
+	padding: 8px;
 }
 
-
-#studentDisplay tr:nth-child(even), #bookDisplay tr:nth-child(even){background-color: #f2f2f2;}
-
-#studentDisplay tr:hover, #bookDisplay tr:hover {background-color: #ddd;}
-
-#studentDisplay th, #bookDisplay th{
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #4CAF50;
-    color: white;
+#studentDisplay tr:nth-child(even), #bookDisplay tr:nth-child(even) {
+	background-color: #f2f2f2;
 }
 
+#studentDisplay tr:hover, #bookDisplay tr:hover {
+	background-color: #ddd;
+}
+
+#studentDisplay th, #bookDisplay th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #4CAF50;
+	color: white;
+}
+
+#wrapper {
+	width: 75%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #98FB98;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-radius: 30px;
+	padding: 25px;
+	margin-bottom: 50px;
+	border: 1px solid black;
+	position: relative;
+}
+
+a {
+	position: absolute;
+	right: 22px;
+	top: 10px;
+}
+
+table {
+	margin: 0 auto;
+	text-align: left;
+}

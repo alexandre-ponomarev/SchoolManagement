@@ -5,11 +5,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
+<link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-	<h1>Welcome To Teacher Administration Page</h1>
-	<hr>
-	<div>
+
+	<div id="wrapper">
+	<a href="/SchoolManagementTool">Log Out</a>
+		<h1>Welcome To Teacher Administration Page</h1>
+		<hr>
+		
 		<div class="tab">
 			<button class="tablinks" onclick="openTab(event, 'Books')">Books</button>
 			<button class="tablinks" onclick="openTab(event, 'Students')">Students</button>
@@ -17,14 +21,31 @@
 		<div id="Books" class="tabcontent">
 			<h3>Add or Edit a Book</h3>
 			<form action="updateBook" method="get">
-				<label>BookID: </label> <input type="text" name="bookid" /><br>
-				<br> <label>Book Title: </label> <input type="text"
-					name="bookname" /><br> <br> <label>Book Author:
-				</label> <input type="text" name="author" /><br> <br> <label>Book
-					Category: </label> <input type="text" name="category" /><br> <br>
-				<button type="submit" name="add">Add Book</button>
-				<button type="submit" name="edit">Edit Book</button>
-				<button type="submit" name="delete">Delete Book</button>
+				<table>
+					<tr>
+						<td><label>BookID: </label></td>
+						<td><input type="text" name="bookid" /></td>
+					</tr>
+					<tr>
+						<td>Book Title:</td>
+						<td><input type="text" name="bookname" /></td>
+					</tr>
+					<tr>
+						<td>Book Author:</td>
+						<td><input type="text" name="author" /></td>
+					</tr>
+					<tr>
+						<td>Book Category:</td>
+						<td><input type="text" name="category" /></td>
+					</tr>
+					<tr>
+						<td colspan="2" style="text-align: center">
+							<button type="submit" name="add">Add</button>
+							<button type="submit" name="edit">Edit</button>
+							<button type="submit" name="delete">Delete</button>
+						</td>
+					</tr>
+				</table>
 			</form>
 			<br>
 			<form action="getBook" method="get">
@@ -34,17 +55,43 @@
 		<div id="Students" class="tabcontent">
 			<h3>Add or Edit a Student</h3>
 			<form action="updateStudent" method="get">
-				<label>StudentID: </label> <input type="text" name="studentid" /><br>
-				<br> <label>User Name: </label> <input type="text"
-					name="username" /><br> 
-				<br> <label>Password: </label> <input type="text" name="studentpass" /><br>
-				 <br> <label>First Name: </label> <input type="text" name="firstname" /><br> 
-				 <br> <label>Last Name: </label> <input type="text" name="lastname" /><br>
-				 <br> <label>City: </label> <input type="text" name="city" /><br>
-				 <br> <label>Postal Code: </label> <input type="text" name="postalcode" /><br> <br>
-				<button type="submit" name="add">Add Student</button>
-				<button type="submit" name="edit">Edit Student</button>
-				<button type="submit" name="delete">Delete Student</button>
+				<table>
+					<tr>
+						<td>StudentID:</td>
+						<td><input type="text" name="studentid" /></td>
+					</tr>
+					<tr>
+						<td>User Name:</td>
+						<td><input type="text" name="username" /></td>
+					</tr>
+					<tr>
+						<td>Password:</td>
+						<td><input type="text" name="studentpass" /></td>
+					</tr>
+					<tr>
+						<td>First Name:</td>
+						<td><input type="text" name="firstname" /></td>
+					</tr>
+					<tr>
+						<td>Last Name:</td>
+						<td><input type="text" name="lastname" /></td>
+					</tr>
+					<tr>
+						<td>City:</td>
+						<td><input type="text" name="city" /></td>
+					</tr>
+					<tr>
+						<td>Postal Code:</td>
+						<td><input type="text" name="postalcode" /></td>
+					</tr>
+					<tr>
+						<td colspan="2" style="text-align: center">
+							<button type="submit" name="add">Add</button>
+							<button type="submit" name="edit">Edit</button>
+							<button type="submit" name="delete">Delete</button>
+						</td>
+					</tr>
+				</table>
 			</form>
 			<br>
 			<form action="getStudent" method="get">
